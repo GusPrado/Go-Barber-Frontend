@@ -28,12 +28,11 @@ export default function SignIn() {
       <img src={logo} alt="GoBarber" />
 
       <Form schema={schema} onSubmit={handleSubmit}>
-        <Input type="email" placeholder="Seu e-mail" name="email" id="" />
+        <Input type="email" placeholder="Seu e-mail" name="email" />
         <Input
           type="password"
           placeholder="Sua senha secreta"
           name="password"
-          id=""
         />
 
         <button type="submit">{loading ? 'Carregando...' : 'Acessar'}</button>
